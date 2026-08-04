@@ -26,3 +26,13 @@ const perguntas = [
     alternativas: ["Neymar e Pelé.", "Manoel Gomez e Tony Ramos."],
   },
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPergunta();
