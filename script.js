@@ -83,4 +83,12 @@ function mostraPergunta() {
   caixaPerguntas.textContent = perguntaAtual.enunciado;
 }
 
+function mostraAlternativa(){
+  for(const alternativa of perguntaAtual.alternativas) {
+     const botaoAlternativa = document.createElement("buton");
+     botaoAlternativa.textContent = alternativa.texto
+     //falta aqui ainda min 7 aula 4
+  }
+}
+
 mostraPergunta();
