@@ -16,7 +16,7 @@ const perguntas = [
          texto: "Isso é maravilhoso!",
          afirmacao: "afirmacao"
        }
-    ],
+    ]
   },
   {
     enunciado: "O Neymar pós aposentado, quer entrar para o Athletico Paranaense, porém precisa de votos pra isso.",
@@ -29,7 +29,7 @@ const perguntas = [
          texto: "Eu não votaria!",
          afirmacao: "afirmacao"
        }
-    ],
+    ]
       
   },
   {
@@ -43,7 +43,7 @@ const perguntas = [
          texto: "Cavaria um pênalti.",
          afirmacao: "afirmacao"
        }
-    ],
+    ]
       
   },
   {
@@ -57,7 +57,7 @@ const perguntas = [
          texto: "Paris Saint-Germain (PSG) * Contexto: Em agosto de 2017, o PSG pagou a multa rescisória de 222 milhões de euros para tirá-lo do Barcelona, tornando-a a transferência mais cara da história do futebol mundial.",
          afirmacao: "afirmacao"
        }
-    ],
+    ]
   
   },
   {
@@ -71,7 +71,7 @@ const perguntas = [
          texto: "Manoel Gomez e Tony Ramos.",
          afirmacao: "afirmacao"
        }
-    ],
+    ]
   },
 ];
 
