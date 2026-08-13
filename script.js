@@ -81,13 +81,14 @@ let perguntaAtual;
 function mostraPergunta() {
   perguntaAtual = perguntas[atual];
   caixaPerguntas.textContent = perguntaAtual.enunciado;
+  mostraAlternativa();
 }
 
 function mostraAlternativa(){
   for(const alternativa of perguntaAtual.alternativas) {
      const botaoAlternativa = document.createElement("buton");
      botaoAlternativa.textContent = alternativa.texto
-     //falta aqui ainda min 7 aula 4
+     caixaAlternativas.appendChild(botaoAlternativa);
   }
 }
 
