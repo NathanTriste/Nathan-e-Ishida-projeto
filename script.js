@@ -101,7 +101,7 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historia += afirmacoes + "";
+    historia += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
