@@ -10,11 +10,11 @@ const perguntas = [
     alternativas:[ 
        {
          texto: "Isso é assustador!",
-         afirmacao: "afirmacao"
+         afirmacao: "Ele se aposenta e todos ficam Sad"
        },
        { 
          texto: "Isso é maravilhoso!",
-         afirmacao: "afirmacao"
+         afirmacao: "Você é uma pessima pessoa"
        }
     ]
   },
@@ -23,11 +23,11 @@ const perguntas = [
     alternativas: [
        {
          texto: "Eu votaria!",
-         afirmacao: "afirmacao"
+         afirmacao: "Voce votou, ele entrou pro Athletico e fez o coxa de filinho"
        },
        { 
          texto: "Eu não votaria!",
-         afirmacao: "afirmacao"
+         afirmacao: "Mesmo sem você votar ele consegue entrar pois tu é indiferente"
        }
     ]
       
@@ -37,11 +37,11 @@ const perguntas = [
     alternativas: [
        {
          texto: "Ele chuta no ângulo do gol, e faria o gol.",
-         afirmacao: "afirmacao"
+         afirmacao: "Foi oque ocorreu e fez o Athletico ser campeão"
        },
        { 
          texto: "Cavaria um pênalti.",
-         afirmacao: "afirmacao"
+         afirmacao: "Conseguiu e fez um gol classificando o Atlhetico como campeão"
        }
     ]
       
@@ -51,11 +51,11 @@ const perguntas = [
     alternativas: [
       {
          texto: "FC Barcelona * Contexto: Neymar conquistou a Liga dos Campeões na temporada 2014/2015, formando o famoso trio de ataque "MSN" ao lado de Lionel Messi e Luis Suárez.",
-         afirmacao: "afirmacao"
+         afirmacao: "Correto"
        },
        { 
          texto: "Paris Saint-Germain (PSG) * Contexto: Em agosto de 2017, o PSG pagou a multa rescisória de 222 milhões de euros para tirá-lo do Barcelona, tornando-a a transferência mais cara da história do futebol mundial.",
-         afirmacao: "afirmacao"
+         afirmacao: "Correto também"
        }
     ]
   
@@ -65,11 +65,11 @@ const perguntas = [
     alternativas: [
       {
          texto: "Neymar e Pelé.",
-         afirmacao: "afirmacao"
+         afirmacao: "Tu manja das parada"
        },
        { 
          texto: "Manoel Gomez e Tony Ramos.",
-         afirmacao: "afirmacao"
+         afirmacao: "Bateu a cabeça em"
        }
     ]
   },
