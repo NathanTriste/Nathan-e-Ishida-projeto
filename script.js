@@ -5,74 +5,71 @@ const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
-  {
-    enunciado: "Assim que acaba a Copa do Mundo 2026, você se depara com o Neymar aposentado.",
-    alternativas:[ 
-       {
-         texto: "Isso é assustador!",
-         afirmacao: "Ele se aposenta e todos ficam Sad"
-       },
-       { 
-         texto: "Isso é maravilhoso!",
-         afirmacao: "Você é uma pessima pessoa"
-       }
-    ]
-  },
-  {
-    enunciado: "O Neymar pós aposentado, quer entrar para o Athletico Paranaense, porém precisa de votos pra isso.",
-    alternativas: [
-       {
-         texto: "Eu votaria!",
-         afirmacao: "Voce votou, ele entrou pro Athletico e fez o coxa de filinho"
-       },
-       { 
-         texto: "Eu não votaria!",
-         afirmacao: "Mesmo sem você votar ele consegue entrar pois tu é indiferente"
-       }
-    ]
-      
-  },
-  {
-    enunciado: "O Neymar estando no Athletico Paranaense, se depara com um lançe decisivo para ser campeão da Libertadores.",
-    alternativas: [
-       {
-         texto: "Ele chuta no ângulo do gol, e faria o gol.",
-         afirmacao: "Foi oque ocorreu e fez o Athletico ser campeão"
-       },
-       { 
-         texto: "Cavaria um pênalti.",
-         afirmacao: "Conseguiu e fez um gol classificando o Atlhetico como campeão"
-       }
-    ]
-      
-  },
-  {
-    enunciado: "Qual foi o clube europeu pelo qual Neymar Jr. conquistou a UEFA Champions League e para qual equipe ele se transferiu na transação mais cara da história do futebol?",
-    alternativas: [
-      {
-         texto: "FC Barcelona * Contexto: Neymar conquistou a Liga dos Campeões na temporada 2014/2015, formando o famoso trio de ataque "MSN" ao lado de Lionel Messi e Luis Suárez.",
-         afirmacao: "Correto"
-       },
-       { 
-         texto: "Paris Saint-Germain (PSG) * Contexto: Em agosto de 2017, o PSG pagou a multa rescisória de 222 milhões de euros para tirá-lo do Barcelona, tornando-a a transferência mais cara da história do futebol mundial.",
-         afirmacao: "Correto também"
-       }
-    ]
-  
-  },
-  {
-    enunciado: "Quais são os dois maiores artilheiros da história da Seleção Brasileira masculina (em jogos oficiais)?",
-    alternativas: [
-      {
-         texto: "Neymar e Pelé.",
-         afirmacao: "Tu manja das parada"
-       },
-       { 
-         texto: "Manoel Gomez e Tony Ramos.",
-         afirmacao: "Bateu a cabeça em"
-       }
-    ]
-  },
+    {
+        enunciado: "Assim que acaba a Copa do Mundo 2026, você se depara com o Neymar aposentado.",
+        alternativas: [
+            {
+                texto: "Isso é assustador!",
+                afirmacao: "Ele se aposenta e todos ficam Sad."
+            },
+            {
+                texto: "Isso é maravilhoso!",
+                afirmacao: "Você é uma péssima pessoa."
+            }
+        ]
+    },
+    {
+        enunciado: "O Neymar pós-aposentado quer entrar para o Athletico Paranaense, porém precisa de votos pra isso.",
+        alternativas: [
+            {
+                texto: "Eu votaria!",
+                afirmacao: "Você votou, ele entrou pro Athletico e fez o Coxa de filhinho."
+            },
+            {
+                texto: "Eu não votaria!",
+                afirmacao: "Mesmo sem você votar ele consegue entrar pois tu é indiferente."
+            }
+        ]
+    },
+    {
+        enunciado: "O Neymar estando no Athletico Paranaense se depara com um lance decisivo para ser campeão da Libertadores.",
+        alternativas: [
+            {
+                texto: "Ele chuta no ângulo do gol, e faria o gol.",
+                afirmacao: "Foi o que ocorreu e fez o Athletico ser campeão."
+            },
+            {
+                texto: "Cavaria um pênalti.",
+                afirmacao: "Conseguiu e fez um gol classificando o Athletico como campeão."
+            }
+        ]
+    },
+    {
+        enunciado: "Qual foi o clube europeu pelo qual Neymar Jr. conquistou a UEFA Champions League e para qual equipe ele se transferiu na transação mais cara da história do futebol?",
+        alternativas: [
+            {
+                texto: "FC Barcelona",
+                afirmacao: "Correto."
+            },
+            {
+                texto: "Paris Saint-Germain (PSG)",
+                afirmacao: "Correto também."
+            }
+        ]
+    },
+    {
+        enunciado: "Quais são os dois maiores artilheiros da história da Seleção Brasileira masculina (em jogos oficiais)?",
+        alternativas: [
+            {
+                texto: "Neymar e Pelé.",
+                afirmacao: "Tu manja das paradas."
+            },
+            {
+                texto: "Manoel Gomes e Tony Ramos.",
+                afirmacao: "Bateu a cabeça, hein?"
+            }
+        ]
+    }
 ];
 
 let atual = 0;
@@ -84,14 +81,14 @@ function mostraPergunta() {
         mostraResultado();
         return;
     }
-     perguntaAtual = perguntas[atual];
-     caixaPerguntas.textContent = perguntaAtual.enunciado;
-     caixaAlternativas.textContent = "";
-     mostraAlternativas();
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaAlternativas.textContent = "";
+    mostraAlternativas();
 }
 
-function mostraAlternativas(){
-    for(const alternativa of perguntaAtual.alternativas) {
+function mostraAlternativas() {
+    for (const alternativa of perguntaAtual.alternativas) {
         const botaoAlternativas = document.createElement("button");
         botaoAlternativas.textContent = alternativa.texto;
         botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
@@ -101,7 +98,7 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada) {
     const afirmacoes = opcaoSelecionada.afirmacao;
-    historia += afirmacoes + " ";
+    historiaFinal += afirmacoes + " ";
     atual++;
     mostraPergunta();
 }
